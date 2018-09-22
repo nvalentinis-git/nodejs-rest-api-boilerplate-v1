@@ -1,12 +1,24 @@
 
 
-# Tech stack
+# Tech stack and modules
 
+- NodeJS
 - Express 4
 - cross-env
 - Babel
 - Webpack 3
+- Mongoose (ODM)
+- Compression
+- Helmet
 
+# Features
+
+- It is a basic REST API
+- Users can CRUD Post
+- Users can follow a Post
+- Users can get Notifications
+- Users can like a Post
+- 
 
 # Scripts
 
@@ -22,6 +34,13 @@ Create the bundle with Webpack
     $ npm run dev
 
     $ npm run prod
+    
+## Start a MongoDB instance
+Using docker we can easily have a DB instance running
+Default port is 27017
+
+    $ docker run --name mongo-container mongo:latest
+   
 
 ## Source
    This App was built based on this blog.

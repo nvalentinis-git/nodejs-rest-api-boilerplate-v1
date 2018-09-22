@@ -1,9 +1,10 @@
 import express from 'express';
+import constants from './config/constants';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, error => {
+app.listen(constants.PORT, error => {
     if (error) {
         throw error;
 
